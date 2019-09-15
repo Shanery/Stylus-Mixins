@@ -1,0 +1,33 @@
+$small-fs = 16px;
+$smaller-fs = 17px;
+$medium-fs = 18px;
+$large-fs = 18px;
+$widescreen-fs = 22px;
+
+
+body {
+  // Scaling Font Sizes
+  media-query($small-down) { font-size: 16px }
+  media-query($smaller) { font-size: 17px }
+  media-query($medium) { font-size: 18px }
+  media-query($large) { font-size: 18px }
+  media-query($widescreen) { font-size: 22px }
+
+  // Default Border Box
+  * {
+    box-sizing: border-box;
+    ::before, ::after {
+      box-sizing: border-box;
+    }
+  }
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
